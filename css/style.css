@@ -256,8 +256,6 @@ h1 { background: transparent url(../img/title.png) 0 0 no-repeat; }
 
 /* =Footer */
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   text-align: center;
 }
