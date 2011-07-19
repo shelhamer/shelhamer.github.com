@@ -234,7 +234,25 @@ h1 { background: transparent url(../img/title.png) 0 0 no-repeat; }
 
 /* =Main */
 
-#main { width: 496px; }
+#main { float: left; width: 496px; }
+
+#supplement { float: left; margin-left: 48px; width: 196px; }
+
+  #portrait { border: 1px solid #222; }
+
+  #supplement h2 {
+    margin: 0;
+    font-size: 138.5%; line-height: 153.9%;
+    font-weight: normal;
+  }
+
+  #supplement p {
+    margin: 11px 0 0 0; padding: 0;
+    font-size: 108%;
+    line-height: 123.1%;
+  }
+
+  #supplement a { font-size: 90%; }
 
 /* =Footer */
 footer {
@@ -252,10 +270,11 @@ a:hover, a:focus, a:active { text-decoration: underline; }
 a:active { color: #800; }
 a:visited { color: #800; }
 
+h2 { }
+
 p {
   padding: 0 0 0 16px;
-  font-size: 116%;
-  line-height: 153.9%;
+  font-size: 116%; line-height: 153.9%;
 }
 
 
