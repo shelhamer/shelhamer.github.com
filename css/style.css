@@ -212,8 +212,9 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
 
 html, body {
-  font-family: "Helvetica Neue Light", "Helvitica Neue",
-    "Helvetica, ""MS Trebuchet", sans-serif;
+  font-family: "Helvetica Light", "Helvetica", "Helvetica Neue Light",
+    "Helvetica Neue", "MS Trebuchet", sans-serif;
+  color: #333;
   background: #fff url(../img/bg-page.png) repeat;
 }
 
@@ -223,10 +224,17 @@ html, body {
 /* =Container */
 #container {
   margin: 72px auto 0;
-  padding: 32px;
+  padding: 24px 32px;
   width: 800px;
   background: #ddd url(../img/bg-container.png) repeat;
 }
+
+/* =Header */
+h1 { background: transparent url(../img/title.png) 0 0 no-repeat; }
+
+/* =Main */
+
+#main { width: 496px; }
 
 /* =Footer */
 footer {
@@ -236,9 +244,19 @@ footer {
   text-align: center;
 }
 
+/* =Content
+-------------------------------*/
 
+a { color: #a22; text-decoration: none; }
+a:hover, a:focus, a:active { text-decoration: underline; }
+a:active { color: #800; }
+a:visited { color: #800; }
 
-
+p {
+  padding: 0 0 0 16px;
+  font-size: 116%;
+  line-height: 153.9%;
+}
 
 
 
