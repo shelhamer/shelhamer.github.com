@@ -208,12 +208,33 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* =============================================================================
    Primary styles
-   Author:
+   Author: Evan Shelhamer, Imaginary Number (http://imaginarynumber.net)
    ========================================================================== */
 
+html, body {
+  font-family: "Helvetica Neue Light", "Helvitica Neue",
+    "Helvetica, ""MS Trebuchet", sans-serif;
+  background: #fff url(../img/bg-page.png) repeat;
+}
 
+/* =Layout
+-------------------------------*/
 
+/* =Container */
+#container {
+  margin: 72px auto 0;
+  padding: 32px;
+  width: 800px;
+  background: #ddd url(../img/bg-container.png) repeat;
+}
 
+/* =Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 
 
 
