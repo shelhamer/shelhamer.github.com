@@ -241,7 +241,7 @@ h1 { background: transparent url(../img/title.png) 0 0 no-repeat; }
   #portrait { border: 1px solid #222; }
 
   #supplement h2 {
-    margin: 0;
+    margin: 1em 0 0 0;
     font-size: 138.5%; line-height: 153.9%;
     font-weight: normal;
   }
@@ -252,7 +252,7 @@ h1 { background: transparent url(../img/title.png) 0 0 no-repeat; }
     line-height: 123.1%;
   }
 
-  #supplement a { font-size: 90%; }
+  #supplement .small { font-size: 90%; }
 
 /* =Footer */
 footer {
