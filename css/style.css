@@ -266,9 +266,9 @@ footer {
 -------------------------------*/
 
 a { color: #a22; text-decoration: none; }
-a:hover, a:focus, a:active { text-decoration: underline; }
-a:active { color: #800; }
-a:visited { color: #800; }
+a:hover, a:focus, a:active { color: #a22; text-decoration: underline; }
+a:active { color: #600; }
+a:visited { color: #600; }
 
 h2 { }
 
