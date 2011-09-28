@@ -233,8 +233,8 @@ html, body {
 
 /* =Header */
 h1 {
-  margin: 0;
-  font-size: 242.5%;
+  margin: 0 0 .625em 0;
+  font-size: 200%;
   font-weight: 300;
 }
 
