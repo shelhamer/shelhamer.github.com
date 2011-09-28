@@ -226,7 +226,7 @@ html, body {
 /* =Container */
 #container {
   margin: 48px auto 0;
-  padding: 24px 32px;
+  padding: 16px 32px;
   width: 800px;
   background: #ddd url(../img/bg-container.png) repeat;
 }
@@ -279,8 +279,9 @@ a:visited { color: #600; }
 h2 { }
 
 p {
-  padding: 0 0 0 16px;
-  font-size: 116%; line-height: 153.9%;
+  margin: 1.0666em 0;
+  padding: 0;
+  font-size: 116%; line-height: 1.0666em;
 }
 
 strong { font-weight: normal; color: #000; }
