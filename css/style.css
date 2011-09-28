@@ -232,7 +232,13 @@ html, body {
 }
 
 /* =Header */
-h1 { background: transparent url(../img/title.png) 0 0 no-repeat; }
+h1 {
+  margin: 0;
+  font-size: 242.5%;
+  font-weight: 300;
+}
+
+  h1 span { color: #a22; }
 
 /* =Main */
 
