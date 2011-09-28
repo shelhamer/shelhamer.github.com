@@ -226,8 +226,8 @@ html, body {
 /* =Container */
 #container {
   margin: 48px auto 0;
-  padding: 16px 32px;
-  width: 800px;
+  padding: 32px;
+  width: 752px;
   background: #ddd url(../img/bg-container.png) repeat;
 }
 
