@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- end CSS-->
 
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="http://use.typekit.com/dvp6pxz.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
@@ -99,8 +99,8 @@
     <p>© Imaginary Number 2011</p>
   </footer>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
@@ -108,10 +108,10 @@
   <!-- end scripts-->
 
   <script>
-    window._gaq = [['_setAccount','UA-24621471-1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
+    var _gaq=[['_setAccount','UA-24621471-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
 
   <!--[if lt IE 7 ]>
