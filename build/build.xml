@@ -409,7 +409,11 @@
   <!-- This is a private target -->
       <echo message="Cleaning up previous build directory..."/>
       <delete dir="./${dir.intermediate}/"/>
-      <delete dir="./${dir.publish}/"/>
+      <delete includeemptydirs="true">
+        <fileset dir="${dir.publish}">
+          <include name="*" />
+        </fileset>
+      </delete>
   </target>
 
 
@@ -535,7 +539,7 @@
       <propertyregex property="scripts.sha" input="${scripts.fullsha}" regexp=".{${hash.length}}" select="\0" />
       <property name="scripts.js" value="${dir.js}/${scripts.sha}.js" />
       <copy file="${dir.intermediate}/${dir.js}/scripts-concat.min.js" tofile="${dir.publish}/${dir.js}/${scripts.sha}.js" />
-  
+
   <!-- cachebust modules directory name -->
       <!-- Concatinate only to generate checksum. Concatinated file not actually published. -->
       <if>
@@ -572,7 +576,7 @@
         <fileset dir="${dir.source}/${dir.js}" excludes="${file.js.bypass}, **/*.min.js" includes="**/*.js">
           <exclude name="${dir.js}/otherscripts-concat.js"/>
           <exclude name="${dir.js}/scripts-concat.js"/>
-        </fileset>          
+        </fileset>
           <arg line="-jar"/>
           <arg path="./${dir.build.tools}/closure-compiler-v1346.jar"/>
           <arg line="--js"/>
