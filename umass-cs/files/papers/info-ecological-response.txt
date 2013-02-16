@@ -1,0 +1,60 @@
+Response to Could information theory provide an ecological theory of sensory
+processing? Evan Shelhamer
+
+  The sparse coding of sensory inputs and the compact representation of memory
+traces are both desirable in a biological system. The nervous system is often
+the largest draw of vital oxygen and glucose so any means of maximizing its
+efficiency would have adaptive value. Since the brain relies on the
+electrochemical activity of a finite set of neurons (of limited dynamic range)
+to code and process information, a system that permits the greatest
+discrimination from the fewest axonal firings would be optimal in energy cost.
+An information-theoretic scheme that minimizes the entropy of sensory inputs
+satisfies this requirement. The compact coding created by decorrelating input in
+this way is more metabolically efficient than dense codes, may pass more
+information up through the cortical hierarchy, and could facilitate pattern
+recognition by supplying independent components as robust building blocks. The
+theory proposed by Joseph Atick's paper satisfies the conditions for these
+benefits to be possible and generates predictions that quantitatively agree with
+physiological measurements. Furthermore, the mechanisms it employs can be
+plausibly carried out in the known retinal cell-interneuron-ganglion neural
+structure of early visual processing in primates. I support the conclusions of
+theory.
+
+  The simplified model of low-level visual processing presented in the paper is
+reasonable. The receptive field characteristics of retinal cells, their
+interneuron connections, and ganglionic outputs have been well-studied in
+cognitive psychology; the central aspects of retinal modulation, opponency, and
+physiological adaptation are honored in this theory. The translation invariance
+assumption is permissible given the small impact of angle of incidence within
+the confines of individual receptive fields. Background luminance and
+physiological adaptation were controlled for in the observation of response
+measurements by observing rapid deviations from an adapted background
+illumination, which are only attributable to neural processing given the sheer
+rate of change. Evidence that these assumptions have not led the analysis astray
+is provided by the resemblance of the derived retinal kernel to the receptive
+fields of actual primate retinal-ganglionic cells (shown in Figure 5, p. 232).
+
+  The predictions fit known ganglionic response curves and are arrived at by
+operations that could be implemented by neurons. Figures 1 & 10 show contrast
+sensitivity plots that match predictions for the wildly different systems of the
+blowfly LMC (large monopolar cells) and the retinal neurons of primates
+respectively. The generality of the results demonstrated across these examples
+and distinct types of opponency seen in primate and freshwater fish retinas
+suggests this information-theoretic view may broadly help to explain immediate
+sensory perception. The linear transformations involved in the decorrelation of
+sensory signals could be embodied by varying firing rates of interneurons in the
+visual processing path. The final mixing of the derived independent luminance
+and chromatic channels could be accomplished by the same means. The extent of
+the decorrelation, or “whitening” to speak of frequencies, is observed to be
+bounded at the noise floor of retinal cells. This indicates that the whitening
+is performed to improve perceptual processing, since it is only performed in the
+signal range to avoid amplification of noise. This is reinforced by the observed
+switch between bandpass and lowpass type filtering as background luminance on
+the retina is decreased. That the retinal assembly stage is only capable of
+eliminating pairwise correlation is of no weakness of the theory. Higher order
+statistics can be extracted further up in visual hierarchy, as is observed in
+the more statistically complex receptive fields of the V2 and V4 areas. Given
+the intuitive reasoning behind the benefits of efficient coding, the agreement
+of predictions with neurological observations, and the theory's adherence to
+known modes of neural activity, the argument for an minimum-entropy sensory
+strategy is valid.
