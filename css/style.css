@@ -49,8 +49,7 @@ body { margin: 0; font-size: 13px; line-height: 1.231; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
+a { color: #a22; }
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 
@@ -281,7 +280,6 @@ footer {
 a { color: #a22; text-decoration: none; }
 a:hover, a:focus, a:active { color: #a22; text-decoration: underline; }
 a:active { color: #600; }
-a:visited { color: #600; }
 
 h2 { }
 
