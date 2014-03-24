@@ -3,10 +3,10 @@
 
 
 /* TEAM */
-  <Developer/Designer/Sysadmin>: <Evan Shelhamer>
+  <Owner>: <Evan Shelhamer>
   Site: http://imaginarynumber.net
   Twitter:
-  Location: Amherst, Massachusetts, US
+  Location: Berkeley, CA, US
 
 /* THANKS */
 
