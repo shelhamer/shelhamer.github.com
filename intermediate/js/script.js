@@ -1,0 +1,2 @@
+nice={grid_sz:16,container:null,T:null,init:function(){nice.container=$("#container");nice.container.css({position:"relative"});nice.gridAlign()},waitOnResize:function(){clearTimeout(nice.T);nice.T=setTimeout(function(){nice.gridAlign()},100)},gridAlign:function(){var c=$(window).width(),a=nice.container.offset().left,b=Math.floor(a/nice.grid_sz)*nice.grid_sz-a;nice.container.css({left:Math.round(b)+"px"});console.log(c);console.log(a);console.log(b);console.log((a+b)/nice.grid_sz)}};
+$(function(){nice.init();$(window).resize(nice.waitOnResize)});
