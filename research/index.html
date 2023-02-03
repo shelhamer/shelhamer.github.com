@@ -1,0 +1,616 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=800">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    /*
+    html, body {
+      background: #fff url(images/bg.png) repeat;
+    }
+    */
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    #portrait {
+      width: 280px;
+      border: 1px solid #000;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+      text-align: center;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .one img {
+      width: 100%;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span.highlight, tr.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <title>Evan Shelhamer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+  <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>Evan Shelhamer</name>
+              </p>
+              <p>
+                I am a research scientist at DeepMind in London.
+                I earned my PhD in computer science from UC Berkeley in 2019 where I was advised by <a href="http://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a> as part of <a href="http://bair.berkeley.edu">BAIR</a>.
+                Previously, I spent a wonderful year in Cambridge, MA as a research scientist at Adobe.
+              </p>
+              <p>
+                I believe in DIY science and open tooling for research and engineering.
+                <br>
+                I was the lead developer of the <a href="http://caffe.berkeleyvision.org/">Caffe</a> deep learning framework from version 0.1 to 1.0, and I still engage in open sourcery when I can.
+              </p>
+              <p>
+                Before Berkeley, I earned dual degrees in computer science (artificial intelligence concentration) and psychology at <a href="https://www.cics.umass.edu/">UMass Amherst</a> advised by <a href="https://people.cs.umass.edu/~elm/">Erik Learned-Miller</a>.
+                <!-- During my PhD, I have had the opportunity to intern at <a href"https://research.fb.com/category/facebook-ai-research/">FAIR</a>, <a href="https://deepmind.com/">DeepMind</a>, and <a href="https://openai.com/">OpenAI</a>. -->
+              </p>
+              <p>
+                I take my coffee black.
+              </p>
+              <p>
+                <a
+                  href="mailto:shelhamer@cs.berkeley.edu">shelhamer@cs.berkeley.edu</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=-ltRSM0AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://github.com/shelhamer">GitHub</a> &nbsp;/&nbsp;
+                <a href="shelhamer-cv.pdf">CV</a>
+              </p>
+            </td>
+            <td width="33%">
+              <img id="portrait" src="images/shelhamer.jpg">
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Research</heading>
+              <p>
+                I'm interested in computer vision and machine learning, in particular the reconciliation of visual structure with end-to-end learning, plus dynamic inference by adaptive model complexity and computation.
+                <!-- Representative projects are <span class="highlight">highlighted</span>. -->
+              </p>
+              <p>
+              <strong>Selected Projects</strong>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <!--
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Selected Projects</heading>
+            </td>
+          </tr>
+        </table>
+        -->
+
+        <!--
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr onmouseout="paper_id_stop()" onmouseover="paper_id_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='paper_id_image'><img src='images/paper_id_after.png'></div>
+                <img src='images/paper_id_before.png'>
+              </div>
+              <script type="text/javascript">
+                function paper_id_start() {
+                  document.getElementById('paper_id_image').style.opacity = "1";
+                }
+
+                function paper_id_stop() {
+                  document.getElementById('paper_id_image').style.opacity = "0";
+                }
+                paper_id_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="paper_url">
+                  <papertitle>TITLE</papertitle>
+                </a>
+                <br>
+                <strong>Evan Shelhamer</strong>
+                <br>
+                <em>VENUE</em>, YEAR &nbsp; <font color="red"><strong>(NOTE)</strong></font>
+                <br>
+                <a href="arxiv_url">arxiv</a> /
+                <a href="code_url">code</a> /
+                <a href="">reviews</a> /
+                <a href="data/paper_id.bib">bib</a>
+              </p>
+              <p>
+                Summary.
+              </p>
+            </td>
+          </tr>
+        </table>
+        -->
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/fcn.png'>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="data/fcn.pdf">
+                  <papertitle>Fully Convolutional Networks for Semantic Segmentation</papertitle>
+                </a>
+                <br>
+                <strong>Evan Shelhamer*</strong>,
+                Jon Long*,
+                Trevor Darrell
+                &nbsp;
+                (*equal contribution)
+                <br>
+                <em>PAMI</em>, 2017
+                <br>
+                <em>CVPR</em>, 2015 &nbsp; <font color="red"><strong>(Best Paper Honorable Mention)</strong></font>
+                <br>
+                <a href="https://arxiv.org/abs/1605.06211">PAMI arxiv</a> /
+                <a href="https://arxiv.org/abs/1411.4038">CVPR arxiv</a> /
+                <a href="https://fcn.berkeleyvision.org/">code &amp; models</a> /
+                <a href="https://docs.google.com/presentation/d/1VeWFMpZ8XN7OC3URZP4WdXvOGYckoFWGVN7hApoXVnc">slides</a> /
+                <a href="data/fcn.bib">bib</a>
+              </p>
+              <p>
+                Fully convolutional networks are machines for image-to-image learning and inference.
+                <br>
+                These local models alone, trained end-to-end and pixels-to-pixels, improved semantic segmentation accuracy 30% relative and efficiency 300x on PASCAL VOC.
+                <br>
+                Skip connections across layers help resolve what and where.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/caffe.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://caffe.berkeleyvision.org/">
+                  <papertitle>Caffe Deep Learning Framework</papertitle>
+                </a>
+                <br>
+                Y. Jia,
+                <strong>E. Shelhamer</strong>,
+                J. Donahue,
+                S. Karayev,
+                J. Long,
+                R. Girshick,
+                S. Guadarrama,
+                T. Darrell,
+                and <a href="https://github.com/BVLC/caffe/graphs/contributors">our community contributors</a>!
+                <br>
+                <em>BVLC + BAIR</em>, 2013–2017
+                <br>
+                <em>ACM MM</em>, 2014 &nbsp; <font color="red"><strong>(Winner of the Open Source Software Competition)</strong></font>
+                <br>
+                <a href="https://caffe.berkeleyvision.org/">project</a> /
+                <a href="https://github.com/BVLC/caffe">code</a> /
+                <a href="https://arxiv.org/abs/1408.5093">ACM MM'14 arxiv</a> /
+                <a href="https://docs.google.com/presentation/d/1HxGdeq8MPktHaPb-rlmYYQ723iWzq9ur6Gjo71YiG0Y">slides</a> /
+                <a href="data/caffe.bib">bib</a>
+                <p></p>
+                <p>
+                  Caffe is a deep learning framework made with expression, speed, and modularity in mind.
+                  The deep learning shift was in part a sea change on the wave of open science and toolkits, including Caffe and its Model Zoo.
+                </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/sigma.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="data/sigma.pdf">
+                  <papertitle>Blurring the Line between Structure and Learning to Optimize and Adapt Receptive Fields</papertitle>
+                </a>
+                <br>
+                <strong>Evan Shelhamer</strong>,
+                Dequan Wang,
+                Trevor Darrell
+                <br>
+                <em>In submission</em>, 2019
+                <br>
+                <a href="https://arxiv.org/abs/1904.11487">arxiv</a> /
+                <a href="https://docs.google.com/presentation/d/1ISR0kpq7JoO3LpnBYKhjEVuXFjWGaQVcGgxYtY9UQlU">slides</a> /
+                <a href="data/sigma.bib">bib</a>
+              </p>
+              <p>
+                Composing structured Gaussian filters with free-form filters, and learning both, optimizes over receptive field size and shape.
+                In effect this controls the degree of locality:
+                <br>
+                changes in our <em>parameters</em> would require changes in <em>architecture</em> for standard networks.
+                Dynamic inference adapts receptive field size to cope with scale variation.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/sigma-star.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="data/sigma-star.pdf">
+                  <papertitle>Dynamic Scale Inference by Entropy Minimization</papertitle>
+                </a>
+                <br>
+                Dequan Wang*,
+                <strong>Evan Shelhamer*</strong>,
+                Bruno Olshausen,
+                Trevor Darrell
+                <br>
+                <em>In submission</em>, 2019
+                <br>
+                <a href="http://arxiv.org/abs/1908.03182">arxiv</a> /
+                <a href="data/sigma-star.bib">bib</a>
+              </p>
+              <p>
+                Unsupervised optimization <em>during inference</em> gives top-down feedback to iteratively adjust feedforward prediction.
+                Minimizing output entropy with respect to model parameters optimizes for certainty, and tunes the model to each test input.
+                Extending dynamic scale inference with this optimization refines predictions and generalizes better to scale shifts.
+              </p>
+            </td>
+          </tr>
+        </table> -->
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <strong>More Projects</strong>
+            </td>
+          </tr>
+        </table>
+
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/imp.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="data/imp.pdf">
+                  <papertitle>Infinite Mixture Prototypes for Few-Shot Learning</papertitle>
+                </a>
+                <br>
+                Kelsey R. Allen, <strong>Evan Shelhamer*</strong>, Hanul Shin*, Joshua B. Tenenbaum
+                <br>
+                <em>ICML</em>, 2019
+                <br>
+                <a href="https://arxiv.org/abs/1902.04552">arxiv</a> /
+                <a href="data/imp.bib">bib</a>
+              </p>
+              <p>
+                Infinite mixture prototypes adaptively adjust model capacity by representing classes as <em>sets</em> of clusters and inferring their number.
+                This handles both simple and complex few-shot tasks, and improves alphabet recognition accuracy by 25% absolute over uni-modal prototypes.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/revolver.png' style="width: 120px;">
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="data/revolver.pdf">
+                  <papertitle>Few-shot Segmentation Propagation with Guided Networks</papertitle>
+                </a>
+                <br>
+                Kate Rakelly*,
+                <strong>Evan Shelhamer*</strong>,
+                Trevor Darrell,
+                Alexei A. Efros,
+                Sergey Levine
+                <br>
+                <em>arXiv</em>, 2018
+                <br>
+                <a href="https://arxiv.org/abs/1806.07373">arxiv</a> /
+                <a href="https://github.com/shelhamer/revolver">code</a> /
+                <a href="data/revolver.bib">bib</a>
+              </p>
+              <p>
+                Extracting a latent task representation from local supervision allows for non-local propagation within and across images with quick updates for real-time interaction.
+              </p>
+              <p>
+                (Note: this subsumes our <a href="https://openreview.net/forum?id=SkMjFKJwG">ICLRW'18 paper on conditional networks</a>).
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/dla.png'>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="data/dla.pdf">
+                  <papertitle>Deep Layer Aggregation</papertitle>
+                </a>
+                <br>
+                Fisher Yu,
+                Dequan Wang,
+                <strong>Evan Shelhamer</strong>,
+                Trevor Darrell
+                <br>
+                <em>CVPR</em>, 2018 &nbsp; <font color="red"><strong>(Oral)</strong></font>
+                <br>
+                <a href="https://arxiv.org/abs/1707.06484">arxiv</a> /
+                <a href="https://github.com/ucbdrive/dla">code</a> /
+                <a href="data/dla.bib">bib</a>
+              </p>
+              <p>
+                Deepening aggregation, the iterative and hierarchical merging of features across layers, improves recognition and resolution.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/lossreward.png'>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="data/lossreward.pdf">
+                  <papertitle>Loss Is Its Own Reward: Self-Supervision for Reinforcement Learning</papertitle>
+                </a>
+                <br>
+                <strong>Evan Shelhamer</strong>,
+                Parsa Mahmoudieh,
+                Max Argus,
+                Trevor Darrell
+                <br>
+                <em>ICLRW</em>, 2017
+                <br>
+                <a href="https://arxiv.org/abs/1612.07307">arxiv</a> /
+                <a href="https://docs.google.com/presentation/d/1qIosgkSP176MO9suDOKbgdRrfv3lBvRrKKivaRRZnAk">slides</a> /
+                <a href="data/lossreward.bib">bib</a>
+              </p>
+              <p>
+              Loss is where you find it.
+              With self-supervision for representation learning, experience without reward need not be so unrewarding for reinforcement learning.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/clockwork.png' width="160">
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="data/clockwork.pdf">
+                  <papertitle>Clockwork Convnets for Video Semantic Segmentation</papertitle>
+                </a>
+                <br>
+                <strong>Evan Shelhamer*</strong>, Kate Rakelly*, Judy Hoffman*, Trevor Darrell
+                <br>
+                <em>ECCVW</em>, 2016
+                <br>
+                <a href="https://arxiv.org/abs/1608.03609">arxiv</a> /
+                <a href="https://github.com/shelhamer/clockwork-fcn">code</a> /
+                <a href="https://docs.google.com/presentation/d/1bZfRBbRME08JoRVC3dDjlHKTG6Yd6JbqDD4gPYeC0LY">slides</a> /
+                <a href="data/clockwork.bib">bib</a>
+              </p>
+              <p>
+                Adaptively computing layers according to their rate of change improves the efficiency of video processing without sacrificing accuracy.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+
+        <!--
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/paper_id_before.png'>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="paper_url">
+                  <papertitle>TITLE</papertitle>
+                </a>
+                <br>
+                <strong>Evan Shelhamer</strong>
+                <br>
+                <em>VENUE</em>, YEAR &nbsp; <font color="red"><strong>(NOTE)</strong></font>
+                <br>
+                <a href="arxiv_url">arxiv</a> /
+                <a href="code_url">code</a> /
+                <a href="">reviews</a> /
+                <a href="data/paper_id.bib">bib</a>
+              </p>
+              <p>
+                Summary.
+              </p>
+            </td>
+          </tr>
+        </table>
+        -->
+
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <heading>Service</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="20">
+          <tr>
+          <td width="25%"><!-- <img src="images/cvf.jpg"> --></td>
+            <td width="75%" valign="center">
+              <p>
+                <strong>Reviewer</strong>: CVPR, ICCV, ECCV, PAMI.
+                <br>
+                <strong>Tutorial Organizer</strong>: DIY Deep Learning with Caffe at CVPR'15 and ECCV'14.
+                <br>
+                <br>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td width="25%"><img src="images/cs188.jpg" alt="cs188"></td>
+            <td width="75%" valign="center">
+              <p>
+                <a href="https://edge.edx.org/courses/BerkeleyX/CS188x-1/Artificial_Intelligence/course/">
+                  Graduate Student Instructor, CS188 Fall 2013
+                </a>
+                <br>
+                <br>
+                Graduate Student Instructor, DIY Deep Learning Fall 2014
+                <br>
+                <br>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+      <!--
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td>
+            <heading>Awards</heading>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+        <tr>
+          <td width="25%">
+          </td>
+          <td width="75%" valign="center">
+            <p>
+              <a href="https://en.wikipedia.org/wiki/International_Conference_on_Computer_Vision#Mark_Everingham_Prize">Mark Everingham Prize ICCV'17</a>
+              for the Caffe deep learning framework
+              <br>
+              (shared with the Caffe crew)
+              <br>
+              <br>
+              <a href="http://www.nsfgrfp.org/">NSF graduate research fellowship 2012–2015</a>
+              <br>
+              <br>
+              <a href="https://www.cics.umass.edu/oaa2012">UMass Amherst Computer Science Award</a> dept. award for top graduating student
+              <br>
+            </p>
+          </td>
+        </tr>
+      </table>
+      -->
+
+    </td>
+    </tr>
+    </table>
+</body>
+
+
+</html>
