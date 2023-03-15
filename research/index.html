@@ -290,6 +290,40 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <td width="25%">
               <div class="one">
+                <!-- <img src='images/TODO.png' width=160> -->
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2006.10726">
+                  <papertitle>Tent: Fully Test-time Adaptation by Entropy Minimization</papertitle>
+                </a>
+                <br>
+                Dequan Wang*,
+                <strong>Evan Shelhamer*</strong>,
+                Shaoteng Liu,
+                Bruno Olshausen,
+                Trevor Darrell
+                <br>
+                <em>ICLR</em>, 2021  &nbsp; <font color="red"><strong>(Spotlight)</strong></font>
+                <br>
+                <a href="https://arxiv.org/abs/2006.10726">arxiv</a> /
+                <a href="https://docs.google.com/presentation/d/1TOblGxYTuarkxRREwZRk0tmxhE_9ELC3ieFddbVGetQ/edit?resourcekey=0-Tce3c1Zzcum1gDcK2UwOYQ">slides</a> /
+                <a href="https://docs.google.com/presentation/d/1PWOzy51SCQTWgX7PMll6dMvHxWALwwErAXO7i0fljqk/edit">poster</a> /
+                <a href="https://github.com/DequanWang/tent">code</a> /
+                <a href="data/tent.bib">bib</a>
+              </p>
+              <p>
+                Tent ⛺️ helps a model adapt itself to changing conditions ☀️ 🌧 ❄️  by updating on new and different data during testing without altering training or requiring more supervision.
+                Tent adapts by test entropy minimization: optimizing the model for confidence as measured by the entropy of its predictions.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
                 <img src='images/sigma.png' width=160>
               </div>
             </td>
@@ -359,6 +393,107 @@
           </tr>
         </table>
 
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <!-- <img src='images/TODO.png' width=160> -->
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2207.03442">
+                  <papertitle>Back to the Source: Diffusion-Driven Adaptation to Test-Time Corruption</papertitle>
+                </a>
+                <br>
+                Jin Gao*,
+                Jialing Zhang*,
+                Xihui Liu,
+                Trevor Darrell,
+                <strong>Evan Shelhamer</strong>&dagger;,
+                Dequan Wang&dagger;
+                <br>
+                (* equal contribution, &dagger; equal advising)
+                <br>
+                <em>CVPR</em>, 2023
+                <br>
+                <a href="https://arxiv.org/abs/2207.03442">arxiv</a> /
+                <a href="https://github.com/shiyegao/DDA">code</a> /
+                <a href="data/dda.bib">bib</a>
+              </p>
+              <p>
+                Most methods for test-time adaptation update the source <em>model</em> by (re-)training on each target domain.
+                We update the target <em>data</em> instead, and project all test inputs toward the source domain with a generative diffusion model.
+                Our input updates help on small batches, data in dependent orders, or on data with multiple corruptions.
+                <!-- TODO -->
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <!-- <img src='images/TODO.png' width=160> -->
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2302.10164">
+                  <papertitle>Seasoning Model Soups for Robustness to Adversarial and Natural Distribution Shifts</papertitle>
+                </a>
+                <br>
+                Francesco Croce,
+                Sylvestre-Alvise Rebuffi,
+                <strong>Evan Shelhamer</strong>,
+                Sven Gowal
+                <br>
+                <em>CVPR</em>, 2023
+                <br>
+                <a href="https://arxiv.org/abs/2302.10164">arxiv</a> /
+                <a href="data/seasoning.bib">bib</a>
+              </p>
+              <p>
+                Models trained for different types of robustness can be merged by taking linear combinations of their parameters to achieve different types of robustness during testing.
+                <!-- TODO -->
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <!-- <img src='images/TODO.png' width=160> -->
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2202.13711">
+                  <papertitle>Evaluating the Adversarial Robustness of Adaptive Test-time Defenses</papertitle>
+                </a>
+                <br>
+                Francesco Croce*,
+                Sven Gowal*,
+                Thomas Brunner*,
+                <strong>Evan Shelhamer</strong>*,
+                Matthias Hein,
+                Taylan Cemgil
+                <br>
+                <em>ICML</em>, 2022
+                <br>
+                <a href="https://arxiv.org/abs/2202.13711">arxiv</a> /
+                <a href="https://icml.cc/media/icml-2022/Slides/18042_FEz682J.pdf">slides</a> /
+                <a href="data/ttad.bib">bib</a>
+              </p>
+              <p>
+                Adaptive test-time defenses alter inference by iteratively updating the input x or parameters 𝜃 of the model to improve robustness to adversarial attack.
+                Or do they?
+                Our careful case study shows that more updates are needed to improve on the robustness of adversarial training.
+                <!-- TODO -->
+              </p>
+            </td>
+          </tr>
+        </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <td width="25%">
