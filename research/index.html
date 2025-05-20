@@ -66,6 +66,7 @@
       height: 160px;
       position: relative;
       text-align: center;
+      display: inline;
     }
 
     .two {
@@ -189,22 +190,163 @@
                 See my <a href="https://scholar.google.com/citations?user=-ltRSM0AAAAJ&hl=en">scholar</a> page for a full list of projects.
                 <!-- Representative projects are <span class="highlight">highlighted</span>. -->
               </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <strong id="latest-projects">Latest Projects</strong>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/galileo.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
               <p>
-              <strong>Selected Projects</strong>
+                <a href="https://arxiv.org/abs/2502.09356">
+                  <papertitle>Galileo: Learning Global & Local Features of Many Remote Sensing Modalities</papertitle>
+                </a>
+                <br>
+                Gabriel Tseng*,
+                Anthony Fuller*,
+                Marlena Reil,
+                Henry Herzog,
+                Patrick Beukema,
+                Favyen&nbsp;Bastani,
+                James R. Green,
+                <strong>Evan Shelhamer</strong>,
+                Hannah Kerner&dagger;,
+                David Rolnick&dagger;
+                <br>
+                (* equal contribution, &dagger; equal advising)
+                <br>
+                <em>ICML</em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2502.09356">arxiv</a> /
+                <a href="https://github.com/nasaharvest/galileo">code</a> /
+                <a href="data/galileo.bib">bib</a>
+              </p>
+              <p>
+                Galileo is a single generalist model of remote sensing data for many kinds of inputs and tasks.
+                This data is diverse, with multiple modalities (optical, radar, ...), shapes (pixel time series, image time series, single images), and spatiotemporal scales (local, global).
+                Our unified self-supervised pre-training achieves transfer on 10 benchmarks with or without fine-tuning.
               </p>
             </td>
           </tr>
         </table>
 
-        <!--
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Selected Projects</heading>
+            <td width="25%">
+              <div class="one">
+                <img src='images/ars.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2406.10427">
+                  <papertitle>Adaptive Randomized Smoothing: Certified Adversarial Robustness for Multi-Step Defences</papertitle>
+                </a>
+                <br>
+                Saiyue Lyu,
+                Shadab Shaikh,
+                Frederick Shpilevskiy,
+                <strong>Evan Shelhamer</strong>,
+                Mathias Lécuyer
+                <br>
+                <em>NeurIPS</em>, 2024  &nbsp; <font color="red"><strong>(Spotlight)</strong></font>
+                <br>
+                <a href="https://arxiv.org/abs/2406.10427">arxiv</a> /
+                <a href="https://nips.cc/virtual/2024/poster/95529">poster + slides</a> /
+                <a href="data/ars.bib">bib</a>
+              </p>
+              <p>
+                Adaptive Randomized Smoothing (ARS) certifies test-time updates against adversarial attack.
+                Our theory establishes the sound adaptive composition of general and high-dimensional functions of noisy inputs.
+                In practice, ARS learns to mask the noise for randomized smoothing given the input with results on CelebA, CIFAR-10, and ImageNet.
+              </p>
             </td>
           </tr>
         </table>
-        -->
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/jumbo.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2502.15021">
+                  <papertitle>Simpler Fast Vision Transformers with a Jumbo CLS Token</papertitle>
+                </a>
+                <br>
+                Anthony Fuller,
+                Yousef Yassin,
+                Daniel G. Kyrollos,
+                <strong>Evan Shelhamer</strong>&dagger;,
+                James R. Green&dagger;
+                <br>
+                (&dagger; equal advising)
+                <br>
+                <em>arXiv</em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2502.15021">arxiv</a> /
+                <a href="https://github.com/antofuller/jumbo">code</a> /
+                <a href="data/jumbo.bib">bib</a>
+              </p>
+              <p>
+                Jumbo makes vision transformers (ViTs) faster and more accurate by altering just one token:
+                it makes a wider CLS token, splits it for self-attention, then joins it for its own wider FFN.
+                Jumbo improves on registers in accuracy and efficient architectures in speed, while still a plain ViT, with results on ImageNet-1K and 21K, time series, and self-supervision by MAE.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td valign="middle" width="25%">
+              <div class="one">
+                <img src='images/efm.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://ml-for-rs.github.io/iclr2024/camera_ready/posters/2.pdf">
+                  <papertitle>Learned Embedding Fields for Multi-Source/Multi-Temporal Earth Observation Imagery</papertitle>
+                </a>
+                <br>
+                Chris Brown*, Michal Kazmierski*, William Rucklidge, Valerie Pasquarella,
+                Sophia Alj, Emily Schechter, Sean Askay, Alexis Boukouvalas,
+                <strong>Evan Shelhamer</strong>
+                <br>
+                (* equal contribution)
+                <br>
+                <em>ML4RS workshop poster at ICLR and demo at CVPR</em>, 2024
+                <br>
+                <a href="https://ml-for-rs.github.io/iclr2024/camera_ready/posters/2.pdf">poster</a>
+              </p>
+              <p>
+                Embedding Fields are learned from remote sensing data then computed as an accessible substitute for remote sensing data.
+                In effect the model is delivered as data, indexed by space (lat, lon) and time (year), for use in analysis without the computational or technical obstacles of directly working with deep networks and remote sensing data products.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <strong id="selected-projects">Selected Projects</strong>
+            </td>
+          </tr>
+        </table>
 
         <!--
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -247,6 +389,108 @@
           </tr>
         </table>
         -->
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                 <img src='images/tent.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2006.10726">
+                  <papertitle>Tent: Fully Test-time Adaptation by Entropy Minimization</papertitle>
+                </a>
+                <br>
+                Dequan Wang*,
+                <strong>Evan Shelhamer*</strong>,
+                Shaoteng Liu,
+                Bruno Olshausen,
+                Trevor Darrell
+                <br>
+                <em>ICLR</em>, 2021  &nbsp; <font color="red"><strong>(Spotlight)</strong></font>
+                <br>
+                <a href="https://arxiv.org/abs/2006.10726">arxiv</a> /
+                <a href="https://docs.google.com/presentation/d/1cX4tjFFISwtZjcEhkewIecnBbiQXwH_tseL3BYhX8-M/edit?resourcekey=0-Wqmng24woDp-ZXQlfiwA4w">slides</a> /
+                <a href="https://docs.google.com/presentation/d/1PWOzy51SCQTWgX7PMll6dMvHxWALwwErAXO7i0fljqk/edit">poster</a> /
+                <a href="https://github.com/DequanWang/tent">code</a> /
+                <a href="data/tent.bib">bib</a>
+              </p>
+              <p>
+                Tent ⛺️ helps a model adapt itself to changing conditions ☀️ 🌧 ❄️  by updating on new and different data during testing without altering training or requiring more supervision.
+                Tent adapts by test entropy minimization: optimizing the model for confidence as measured by the entropy of its predictions.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/soups.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2302.10164">
+                  <papertitle>Seasoning Model Soups for Robustness to Adversarial and Natural Distribution Shifts</papertitle>
+                </a>
+                <br>
+                Francesco Croce,
+                Sylvestre-Alvise Rebuffi,
+                <strong>Evan Shelhamer</strong>,
+                Sven Gowal
+                <br>
+                <em>CVPR</em>, 2023
+                <br>
+                <a href="https://arxiv.org/abs/2302.10164">arxiv</a> /
+                <a href="https://docs.google.com/presentation/d/1VFJi4yU3zTNTBqEqHItfVwrrE6qVsEh_iT7fc-CzIuI/edit?slide=id.g2fac6f44b2a_0_61#slide=id.g2fac6f44b2a_0_61">slides (guest lecture)</a> /
+                <a href="https://docs.google.com/presentation/d/103sa-o-f4mYeEixkcFo6-o-jV7RIeaXx9okcrBxONII/edit?usp=sharing&resourcekey=0-kjXChVs5cejxUI9vEltoSg">slides (summary)</a> /
+                <a href="https://docs.google.com/presentation/d/1ft4nFcBvkXM97EWPrcjtKl2Rgpk7RzCJbdv-HNiBJpY/edit?usp=sharing">poster</a> /
+                <a href="data/seasoning.bib">bib</a>
+              </p>
+              <p>
+                Model soups mix parameters from related fine-tunings into a single model to improve predictions.
+                We mix soups with different seasonings (= models fine-tuned for different types of robustness) to cope with various shifts at test time given few shot supervision.
+                The right seasoning depends on the shift, which we can quickly mix without gradient optimization.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/sigma.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/1904.11487">
+                  <papertitle>Blurring the Line between Structure and Learning to Optimize and Adapt Receptive Fields</papertitle>
+                </a>
+                <br>
+                <strong>Evan Shelhamer</strong>,
+                Dequan Wang,
+                Trevor Darrell
+                <br>
+                <em>ICLRW</em>, 2019
+                <br>
+                <a href="https://arxiv.org/abs/1904.11487">arxiv</a> /
+                <a href="https://docs.google.com/presentation/d/1ISR0kpq7JoO3LpnBYKhjEVuXFjWGaQVcGgxYtY9UQlU">slides</a> /
+                <a href="data/sigma.bib">bib</a>
+              </p>
+              <p>
+                We can optimize filter size by reconciling signal process and deep learning.
+                Composing structured Gaussian filters with free-form filters, and learning both, is a strictly more general parameterization.
+                In effect this controls the degree of locality:
+                <br>
+                changes in our <em>parameters</em> would require changes in <em>architecture</em> for standard networks.
+                Dynamic inference can even adapt filter size to cope with scale variation.
+              </p>
+            </td>
+          </tr>
+        </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <td width="25%">
@@ -327,73 +571,6 @@
           </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <td width="25%">
-              <div class="one">
-                <!-- <img src='images/TODO.png' width=160> -->
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://arxiv.org/abs/2006.10726">
-                  <papertitle>Tent: Fully Test-time Adaptation by Entropy Minimization</papertitle>
-                </a>
-                <br>
-                Dequan Wang*,
-                <strong>Evan Shelhamer*</strong>,
-                Shaoteng Liu,
-                Bruno Olshausen,
-                Trevor Darrell
-                <br>
-                <em>ICLR</em>, 2021  &nbsp; <font color="red"><strong>(Spotlight)</strong></font>
-                <br>
-                <a href="https://arxiv.org/abs/2006.10726">arxiv</a> /
-                <a href="https://docs.google.com/presentation/d/1cX4tjFFISwtZjcEhkewIecnBbiQXwH_tseL3BYhX8-M/edit?resourcekey=0-Wqmng24woDp-ZXQlfiwA4w">slides</a> /
-                <a href="https://docs.google.com/presentation/d/1PWOzy51SCQTWgX7PMll6dMvHxWALwwErAXO7i0fljqk/edit">poster</a> /
-                <a href="https://github.com/DequanWang/tent">code</a> /
-                <a href="data/tent.bib">bib</a>
-              </p>
-              <p>
-                Tent ⛺️ helps a model adapt itself to changing conditions ☀️ 🌧 ❄️  by updating on new and different data during testing without altering training or requiring more supervision.
-                Tent adapts by test entropy minimization: optimizing the model for confidence as measured by the entropy of its predictions.
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <td width="25%">
-              <div class="one">
-                <img src='images/sigma.png' width=160>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://arxiv.org/abs/1904.11487">
-                  <papertitle>Blurring the Line between Structure and Learning to Optimize and Adapt Receptive Fields</papertitle>
-                </a>
-                <br>
-                <strong>Evan Shelhamer</strong>,
-                Dequan Wang,
-                Trevor Darrell
-                <br>
-                <em>ICLRW</em>, 2019
-                <br>
-                <a href="https://arxiv.org/abs/1904.11487">arxiv</a> /
-                <a href="https://docs.google.com/presentation/d/1ISR0kpq7JoO3LpnBYKhjEVuXFjWGaQVcGgxYtY9UQlU">slides</a> /
-                <a href="data/sigma.bib">bib</a>
-              </p>
-              <p>
-                Composing structured Gaussian filters with free-form filters, and learning both, optimizes over filter size and shape alongside content.
-                In effect this controls the degree of locality:
-                <br>
-                changes in our <em>parameters</em> would require changes in <em>architecture</em> for standard networks.
-                Dynamic inference adapts receptive field size to cope with scale variation.
-              </p>
-            </td>
-          </tr>
-        </table>
-
         <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <td width="25%">
               <div class="one">
@@ -428,7 +605,7 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="100%" valign="middle">
-              <strong>More Projects</strong>
+              <strong id="more-projects">More Projects</strong>
             </td>
           </tr>
         </table>
@@ -436,7 +613,7 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <td width="25%">
               <div class="one">
-                <!-- <img src='images/TODO.png' width=160> -->
+                <img src='images/dda.png' width=160>
               </div>
             </td>
             <td valign="middle" width="75%">
@@ -457,6 +634,7 @@
                 <em>CVPR</em>, 2023
                 <br>
                 <a href="https://arxiv.org/abs/2207.03442">arxiv</a> /
+                <a href="https://cvpr.thecvf.com/virtual/2023/poster/21631">poster + slides</a> /
                 <a href="https://github.com/shiyegao/DDA">code</a> /
                 <a href="data/dda.bib">bib</a>
               </p>
@@ -473,37 +651,7 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <td width="25%">
               <div class="one">
-                <!-- <img src='images/TODO.png' width=160> -->
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://arxiv.org/abs/2302.10164">
-                  <papertitle>Seasoning Model Soups for Robustness to Adversarial and Natural Distribution Shifts</papertitle>
-                </a>
-                <br>
-                Francesco Croce,
-                Sylvestre-Alvise Rebuffi,
-                <strong>Evan Shelhamer</strong>,
-                Sven Gowal
-                <br>
-                <em>CVPR</em>, 2023
-                <br>
-                <a href="https://arxiv.org/abs/2302.10164">arxiv</a> /
-                <a href="data/seasoning.bib">bib</a>
-              </p>
-              <p>
-                Models trained for different types of robustness can be merged by taking linear combinations of their parameters to achieve different types of robustness during testing.
-                <!-- TODO -->
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <td width="25%">
-              <div class="one">
-                <!-- <img src='images/TODO.png' width=160> -->
+                <img src='images/ttad.png' width=160>
               </div>
             </td>
             <td valign="middle" width="75%">
@@ -522,14 +670,16 @@
                 <em>ICML</em>, 2022
                 <br>
                 <a href="https://arxiv.org/abs/2202.13711">arxiv</a> /
-                <a href="https://icml.cc/media/icml-2022/Slides/18042_FEz682J.pdf">slides</a> /
+                <a href="https://github.com/fra31/evaluating-adaptive-test-time-defenses">code</a> /
+                <a href="https://icml.cc/media/icml-2022/Slides/18042_FEz682J.pdf">slides (summary)</a> /
+                <a href="https://docs.google.com/presentation/d/1FpmUyxEQCs9SZnCoRX8tuTvrhkFkYnxaIVAIqdFeF2k/edit?slide=id.gad757c9405_4_449#slide=id.gad757c9405_4_449">slides (UpML)</a> /
+                <a href="https://docs.google.com/presentation/d/1FhE8oBqBbe1WhyaoJqyk6v_to2_v0O1bfHkiHyiYXHo/edit?slide=id.g5e0abb4b3e_0_126#slide=id.g5e0abb4b3e_0_126">poster</a> /
                 <a href="data/ttad.bib">bib</a>
               </p>
               <p>
                 Adaptive test-time defenses alter inference by iteratively updating the input x or parameters 𝜃 of the model to improve robustness to adversarial attack.
                 Or do they?
-                Our careful case study shows that more updates are needed to improve on the robustness of adversarial training.
-                <!-- TODO -->
+                Our careful case study shows that more updates are needed to improve on the robustness of adversarial training by test-time updates.
               </p>
             </td>
           </tr>
