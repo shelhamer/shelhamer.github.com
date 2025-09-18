@@ -145,6 +145,15 @@
              <strong>News</strong>
              <ul>
                <li>
+                 3x papers at NeurIPS'25!
+                 <br>
+                 <strong><a href="https://arxiv.org/abs/2505.18636">Asymmetric Duos</a></strong> combines a big and small model for better predictions (spotlight).
+                 <br>
+                 <strong><a href="https://arxiv.org/abs/2505.18051">LookWhere?</a></strong> distills self-supervision into efficient adaptive computation.
+                 <br>
+                 <strong><a href="https://arxiv.org/abs/2507.14511">ReservoirTTA</a></strong> makes and updates a <em>set</em> of models during testing to adapt and re-adapt better and longer.
+               </li>
+               <li>
                  I have been appointed as a <strong><a href="https://cifar.ca/cifarnews/2025/07/03/new-and-returning-ai-talent-at-cifar/">Canada CIFAR AI Chair</a></strong>. p.s. Happy Canada Day! 🍁
                </li>
                <li>
@@ -213,6 +222,105 @@
             </td>
           </tr>
         </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/lookwhere.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2505.18051">
+                  <papertitle>LookWhere? Efficient Visual Recognition by Learning Where to Look and What to See from Self-Supervision</papertitle>
+                </a>
+                <br>
+                Anthony Fuller*,
+                Yousef Yassin*,
+                Junfeng Wen,
+                Daniel G. Kyrollos,
+                Tarek Ibrahim,
+                James R. Green&dagger;,
+                <strong>Evan Shelhamer</strong>&dagger;
+                <br>
+                (* equal contribution, &dagger; equal advising)
+                <br>
+                <em>NeurIPS</em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2505.18051">arxiv</a> /
+                <a href="https://github.com/antofuller/lookwhere">code</a> /
+                <a href="data/lookwhere.bib">bib</a>
+              </p>
+              <p>
+                LookWhere distills self-supervision into efficient adaptive computation by learning where to look (from attention maps) and what to see (from deep representations).
+                It is fast to fine-tune and use: it reduces FLOPs 34x and time 6x for sparse recognition on Traffic Signs and time 1.36x for standard recognition on ImageNet classification and ADE20K segmentation.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/duos.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2505.18636">
+                  <papertitle>Asymmetric Duos: Sidekicks Improve Uncertainty</papertitle>
+                </a>
+                <br>
+                Tim G. Zhou,
+                <strong>Evan Shelhamer</strong>,
+                Geoff Pleiss
+                <br>
+                <em>NeurIPS</em>, 2025 &nbsp; <font color="red"><strong>(Spotlight)</strong></font>
+                <br>
+                <a href="https://arxiv.org/abs/2505.18636">arxiv</a> /
+                <a href="data/duos.bib">bib</a>
+              </p>
+              <p>
+                Size matters: bigger models tend to make better predictions.
+                To adjust size, we pair a larger model with a smaller model as a "sidekick" that can help surprisingly much when combined in the right way.
+                Asymmetric Duos improve accuracy, uncertainty quantification, and selective classification metrics with only ~10−20% more computation at ImageNet scale.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <td width="25%">
+              <div class="one">
+                <img src='images/reservoir.png' width=160>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/2505.14511">
+                  <papertitle>ReservoirTTA: Prolonged Test-time Adaptation for Evolving and Recurring Domains</papertitle>
+                </a>
+                Guillaume Vray*,
+                Devavrat Tomar*,
+                Xufeng Gao,
+                Jean-Philippe Thiran,
+                <strong>Evan Shelhamer</strong>,
+                Behzad Bozorgtabar
+                <br>
+                <em>NeurIPS</em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2505.14511">arxiv</a> /
+                <a href="https://github.com/LTS5/ReservoirTTA">code</a>
+                <a href="data/reservoir.bib">bib</a>
+              </p>
+              <p>
+                Reservoir test-time adaptation populates and updates a fully test-time reservoir of domain-specialist models for robust long-horizon adaptation.
+                Our multi-modeling addresses issues with single model updates (catastrophic forgetting, inter-domain interference, and drift) on  recurring and changing domains with state-of-the-art accuracy on ImageNet-C and more.
+              </p>
+            </td>
+          </tr>
+        </table>
+
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <td width="25%">
@@ -293,42 +401,6 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <td width="25%">
               <div class="one">
-                <img src='images/lookwhere.png' width=160>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://arxiv.org/abs/2505.18051">
-                  <papertitle>LookWhere? Efficient Visual Recognition by Learning Where to Look and What to See from Self-Supervision</papertitle>
-                </a>
-                <br>
-                Anthony Fuller*,
-                Yousef Yassin*,
-                Junfeng Wen,
-                Daniel G. Kyrollos,
-                Tarek Ibrahim,
-                James R. Green&dagger;,
-                <strong>Evan Shelhamer</strong>&dagger;
-                <br>
-                (* equal contribution, &dagger; equal advising)
-                <br>
-                <em>arXiv</em>, 2025
-                <br>
-                <a href="https://arxiv.org/abs/2505.18051">arxiv</a> /
-                <a href="https://github.com/antofuller/lookwhere">code</a> /
-                <a href="data/lookwhere.bib">bib</a>
-              </p>
-              <p>
-                LookWhere distills self-supervision into efficient adaptive computation by learning where to look (from attention maps) and what to see (from deep representations).
-                It is fast to fine-tune and use: it reduces FLOPs 34x and time 6x for sparse recognition on Traffic Signs and time 1.36x for standard recognition on ImageNet classification and ADE20K segmentation.
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <td width="25%">
-              <div class="one">
                 <img src='images/jumbo.png' width=160>
               </div>
             </td>
@@ -356,68 +428,6 @@
                 Jumbo makes vision transformers (ViTs) faster and more accurate by altering just one token:
                 it makes a wider CLS token, splits it for self-attention, then joins it for its own wider FFN.
                 Jumbo improves on registers in accuracy and efficient architectures in speed, while still a plain ViT, with results on ImageNet-1K and 21K, time series, and self-supervision by MAE.
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <td width="25%">
-              <div class="one">
-                <img src='images/duos.png' width=160>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://arxiv.org/abs/2505.18636">
-                  <papertitle>Asymmetric Duos: Sidekicks Improve Uncertainty</papertitle>
-                </a>
-                <br>
-                Tim G. Zhou,
-                <strong>Evan Shelhamer</strong>,
-                Geoff Pleiss
-                <br>
-                <em>arXiv</em>, 2025
-                <br>
-                <a href="https://arxiv.org/abs/2505.18636">arxiv</a> /
-                <a href="data/duos.bib">bib</a>
-              </p>
-              <p>
-                Size matters: bigger models tend to make better predictions.
-                To adjust size, we pair a larger model with a smaller model as a "sidekick" that can help surprisingly much when combined in the right way.
-                Asymmetric Duos improve accuracy, uncertainty quantification, and selective classification metrics with only ~10−20% more computation at ImageNet scale.
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <td width="25%">
-              <div class="one">
-                <img src='images/reservoir.png' width=160>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://arxiv.org/abs/2505.14511">
-                  <papertitle>ReservoirTTA: Prolonged Test-time Adaptation for Evolving and Recurring Domains</papertitle>
-                </a>
-                Guillaume Vray*,
-                Devavrat Tomar*,
-                Xufeng Gao,
-                Jean-Philippe Thiran,
-                <strong>Evan Shelhamer</strong>,
-                Behzad Bozorgtabar
-                <br>
-                <em>arXiv</em>, 2025
-                <br>
-                <a href="https://arxiv.org/abs/2505.14511">arxiv</a> /
-                <a href="https://github.com/LTS5/ReservoirTTA">code</a>
-                <a href="data/reservoir.bib">bib</a>
-              </p>
-              <p>
-                Reservoir test-time adaptation populates and updates a fully test-time reservoir of domain-specialist models for robust long-horizon adaptation.
-                Our multi-modeling addresses issues with single model updates (catastrophic forgetting, inter-domain interference, and drift) on  recurring and changing domains with state-of-the-art accuracy on ImageNet-C and more.
               </p>
             </td>
           </tr>
